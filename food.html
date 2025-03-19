@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Food Application</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+            <div>
+                <img class="logo_img" src="https://thumbs.dreamstime.com/b/food-delivery-icon-isolated-dark-background-simple-vector-logo-food-delivery-icon-isolated-dark-background-215196825.jpg" />
+                <h6 class="logo_title">FOODIES TIME</h6>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#About">About</a>
+                <a href="#Our Menus">Our Menus</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="header_content">
+            <p>MORE FLAVOUR FOR LESS</p>
+            <h1 class="heading_main">Taste The Difference</h1>
+            <p class="heading_p">"From farm to fork, we cultivate an experience<br/> that nourishes your soul and ignites your appetite,<br/> one unforgettable bite at a time."</p>
+            <a class="menu_button" href="#Our Menus">
+                <hr />OUR MENUS<hr/>
+            </a>
+        </div>
+    </div>
+
+    <div class="about" id="About">
+        <div class="about_heading">
+            <h1>About Us</h1>
+            <div class="image_para">
+                <img class="img_about" src="https://t3.ftcdn.net/jpg/09/60/40/64/360_F_960406432_RwRux161y3wjuWutP8KauyJPXQHhTv3K.jpg" />
+                <p class="para_about">We are an independent, family run, neighbourhood restaurant located in the community of Crouch End, North London. We are passionate about sustainably sourced seafood and our aim is to deliver the highest quality food and service in a relaxed, welcoming yet vibrant environment.
+                <br/><br />
+
+                Seafood fans will love our kitchen's offbeat and creative approach to ingredients. Oysters are firmly under the spotlight here at Lyon's, with a cach variety paired with a particular garnish in order to "amplify and compliment their specific natural flavour".
+                <br /> <br/>
+                Our 62-cover restaurant keeps thing unfussy yet classily comfortable, with muted green banquettes and wooden floors.
+                </p>
+            </div>
+        </div>
+        <div class="about_top">
+            <div class="share">
+                <i class="fa fa-arrow-down-up"></i>
+                <div>
+                    <h2>Share Price</h2>
+                    <h1>13.47</h1>
+                    <p>-0.26(-1.88%)</p>
+                </div>
+            </div>
+            <div class="glance">
+                <h1>At a Glance</h1>
+                <div class="glance_box">
+                    <div><h1>678k</h1><p>Partners</p></div>
+                    <div><h1>98m</h1><p>Consumers</p></div>
+                    <div><h1>987m</h1><p>Orders</p></div>
+                    <div><h1>20</h1><p>Countries</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ourMenus" id="Our Menus">
+        <h1 class="menu_head">Our Menus</h1>
+        <p class="menuP">Savor the best of Indian, Chinese, and Italian cuisine—all in one place! <br/>From rich Indian spices to bold Chinese flavors and classic Italian delights, we’ve got something for every craving!</p>
+        <div class="menuCard">
+            <div class="inner_card" onclick="displayCuisine('IndianCuisine')">
+                <div class="Cuisine">
+                    <img class="menu_image" src="https://c.ndtvimg.com/2023-07/rmjkg64_indian-food_625x300_25_July_23.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=675" />
+                    <h1>Indian</h1>
+                    <p><strong>Indian Cuisine:</strong> A burst of rich spices, aromatic curries, and mouth-watering delicacies. Experience the authentic taste of India, from buttery naans to flavorful biryanis!</p>
+                    <br/>
+                    <p>A feast for the senses! From the smoky flavors of tandoori dishes to the rich, velvety gravies of butter chicken and paneer tikka, our Indian menu is a celebration of bold spices and timeless recipes.</p>
+                    <br/>
+                    <p>Experience the magic of India with every bite! From rich, creamy curries to crispy samosas and sizzling tandoori delights, our Indian menu is packed with flavors that tell a story of tradition and spice.</p>
+                </div>
+            </div>
+            <div class="inner_card" onclick="displayCuisine('ChineseCuisine')">
+                <div class="Cuisine">
+                    <img class="menu_image" src="https://t4.ftcdn.net/jpg/03/24/16/57/360_F_324165757_buAX78dg7TGgjh0pB8aUCwOWRkNejmwA.jpg" />
+                    <h1>Chinese</h1>
+                    <p><strong>Chinese Cuisine:</strong> A perfect blend of sweet, spicy, and savory flavors! Indulge in sizzling stir-fries, crispy spring rolls, and perfectly seasoned noodles.</p>
+                    <br/>
+                    <p>Where crunch meets umami! Relish the balance of flavors with crispy Manchurian, sizzling hot and sour soups, and perfectly seasoned chow mein, bringing the heart of China straight to your plate.</p>
+                    <br/>
+                    <p>A symphony of flavors in every dish! From the smoky aroma of wok-tossed noodles to the crunchy perfection of dim sums, our Chinese menu brings you the authentic taste of the Far East.</p>
+                </div>
+            </div>
+            <div class="inner_card" onclick="displayCuisine('ItalianCuisine')">
+                <div class="Cuisine">
+                    <img class="menu_image" src="https://thumbs.dreamstime.com/b/italian-food-table-image-shows-full-delicious-theres-pizza-pasta-bread-more-all-arranged-beautiful-appetizing-323626017.jpg" />
+                    <h1>Italian</h1>
+                    <p><strong>Italian Cuisine:</strong> Where simplicity meets perfection! Dive into cheesy pizzas, creamy pasta, and authentic Italian flavors that bring a taste of Italy to your plate.</p>
+                    <br/>
+                    <p>A taste of Italy in every bite! From cheesy, oven-baked pizzas to creamy risottos and handcrafted pasta, our Italian menu is crafted with passion and tradition to satisfy your cravings.</p>
+                    <br/>
+                    <p>Indulge in the art of Italian cooking! With hand-tossed pizzas, perfectly al dente pasta, and rich, savory sauces, our Italian menu is a love letter to comfort food at its finest.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="IndianCuisine" class="cuisine-details">
+        <h1>Indian Cuisine</h1>
+        <div class="food-grid">
+            <div class="food-item">
+                <img src="https://indiaforbeginners.com/wp-content/uploads/2020/04/India-for-Beginners-custom-tours-8.jpg" alt="Dosa">
+                <p>Dosa</p>
+            </div>
+            <div class="food-item">
+                <img src="https://th-i.thgim.com/public/incoming/h480q6/article67730015.ece/alternates/LANDSCAPE_1200/Thalappakatti%20Chicken%20Biryani.jpg" alt="Biryani">
+                <p>Biryani</p>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsdHbLpoZ41iDhrAmMy7KT0OX3sgHek0FWwg&s" alt="Butter Chicken">
+                <p>Butter Chicken</p>
+            </div>
+            <div class="food-item">
+                <img src="https://j6e2i8c9.rocketcdn.me/wp-content/uploads/2015/04/Achari-paneer-tikka-recipe-6.jpg" alt="Paneer Tikka">
+                <p>Paneer Tikka</p>
+            </div>
+            <div class="food-item">
+                <img src="https://www.kitchensanctuary.com/wp-content/uploads/2023/10/Samosa-square-FS.jpg" alt="Samosa">
+                <p>Samosa</p>
+            </div>
+            <div class="food-item">
+                <img src="https://foodsandflavorsbyshilpi.com/wp-content/uploads/2014/01/FB-Thumnails-website-old-66.jpg" alt="Naan">
+                <p>Naan</p>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrY-YDbNH_JLFnMOh26A1l7WKFgORHz6C3uQ&s" alt="Rajma">
+                <p>Rajma</p>
+            </div>
+            <div class="food-item">
+                <img src="https://www.secondrecipe.com/wp-content/uploads/2016/04/channa-bhatura.jpg" alt="Chole Bhature">
+                <p>Chole Bhature</p>
+            </div>
+            <div class="food-item">
+                <img src="https://www.foodie-trail.com/wp-content/uploads/2020/04/PHOTO-2022-02-12-20-04-41_1.jpg" alt="Gulab Jamun">
+                <p>Gulab Jamun</p>
+            </div>
+            <div class="food-item">
+                <img src="https://madhurasrecipe.com/wp-content/uploads/2023/10/Rasgulla-Featured-Image.jpg" alt="Rasgulla">
+                <p>Rasgulla</p>
+            </div>
+        </div>
+        <button onclick="goBack()">Back to Menus</button>
+    </div>
+
+    <div id="ChineseCuisine" class="cuisine-details">
+        <h1>Chinese Cuisine</h1>
+        <div class="food-grid">
+            <div class="food-item">
+                <img src="https://media.istockphoto.com/id/668526016/photo/dim-sum.jpg?s=612x612&w=0&k=20&c=YyJf0GH52VbTUi-8CF_SiBhWrZAiD4_-pPnHBByWqSE=" alt="Dim Sum">
+                <p>Dim Sum</p>
+            </div>
+            <div class="food-item">
+                <img src="https://images.getrecipekit.com/20220904015448-veg-20fried-20rice.png?aspect_ratio=16:9&quality=90&" alt="Fried Rice">
+                <p>Fried Rice</p>
+            </div>
+            <div class="food-item">
+                <img src="https://www.kitchensanctuary.com/wp-content/uploads/2024/03/Stir-Fried-Noodles-with-Beansprouts-square-FS.jpg" alt="Noodles">
+                <p>Noodles</p>
+            </div>
+            <div class="food-item">
+                <img src="https://redhousespice.com/wp-content/uploads/2021/12/whole-spring-rolls-and-halved-ones-scaled.jpg" alt="Spring Rolls">
+                <p>Spring Rolls</p>
+            </div>
+            <div class="food-item">
+                <img src="https://th-i.thgim.com/public/incoming/rycbtc/article67895056.ece/alternates/FREE_1200/iStock-1334115358.jpg" alt="Manchurian">
+                <p>Manchurian</p>
+            </div>
+            <div class="food-item">
+                <img src="https://curatedkitchenware.com/cdn/shop/articles/20221126175151-szechuan-chicken-stir-fry.png?v=1669485162" alt="Szechuan Chicken">
+                <p>Szechuan Chicken</p>
+            </div>
+            <div class="food-item">
+                <img src="https://www.mygingergarlickitchen.com/wp-content/uploads/2022/02/hot-and-sour-soup-2.jpg" alt="Hot Soup">
+                <p>Hot Soup</p>
+            </div>
+            <div class="food-item">
+                <img src="https://anislandchef.com/wp-content/uploads/2022/02/Roast-Cantonese-Duck-2022.jpg" alt="Peking Duck">
+                <p>Peking Duck</p>
+            </div>
+            <div class="food-item">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/10/Wontons-in-broth-50f1c01.jpg?quality=90&resize=556,505" alt="Wontons">
+                <p>Wontons</p>
+            </div>
+            <div class="food-item">
+                <img src="https://images.getrecipekit.com/20240727161403-img_2168.jpeg?aspect_ratio=4:3&quality=90&" alt="Bao Buns">
+                <p>Bao Buns</p>
+            </div>
+        </div>
+        <button onclick="goBack()">Back to Menus</button>
+    </div>
+
+    <div id="ItalianCuisine" class="cuisine-details">
+        <h1>Italian Cuisine</h1>
+        <div class="food-grid">
+            <div class="food-item">
+                <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU=" alt="Pizza">
+                <p>Pizza</p>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfxekM1U5cx8O-gj31PYj3iHOlPtbPaNiOVA&s" alt="Pasta">
+                <p>Pasta</p>
+            </div>
+            <div class="food-item">
+                <img src="https://media.houseandgarden.co.uk/photos/61894dfbcece303910da5856/1:1/w_660,h_660,c_limit/chicken_risotto_el_3feb12_rex_b.jpg" alt="Risotto">
+                <p>Risotto</p>
+            </div>
+            <div class="food-item">
+                <img src="https://cafedelites.com/wp-content/uploads/2018/01/Mamas-Best-Lasagna-IMAGE-43.jpg" alt="Lasagna">
+                <p>Lasagna</p>
+            </div>
+            <div class="food-item">
+                <img src="https://handletheheat.com/wp-content/uploads/2023/12/best-tiramisu-recipe-SQUARE.jpg" alt="Tiramisu">
+                <p>Tiramisu</p>
+            </div>
+            <div class="food-item">
+                <img src="https://www.simplyorganic.com/media/wysiwyg/tmp/simply-oragnic-Roasted-Tomato-Bruschetta-1080x1080-thumbnail.jpg" alt="Bruschetta">
+                <p>Bruschetta</p>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-VXjYkuw6lhh0tkys2-Lb9TFN_D266IJNLw&s" alt="Gnocchi">
+                <p>Gnocchi</p>
+            </div>
+            <div class="food-item">
+                <img src="https://www.homecookingadventure.com/wp-content/uploads/2022/01/cannoli_siciliani_main.jpg" alt="Cannoli">
+                <p>Cannoli</p>
+            </div>
+            <div class="food-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flickr_-_cyclonebill_-_Ravioli_med_skinke_og_asparges_i_mascarponecreme.jpg/640px-Flickr_-_cyclonebill_-_Ravioli_med_skinke_og_asparges_i_mascarponecreme.jpg" alt="Ravioli">
+                <p>Ravioli</p>
+            </div>
+            <div class="food-item">
+                <img src="https://recipesblob.oetker.in/assets/6c0a769c75d444d99ba0b931c6f0418b/636x382/calzone.jpg" alt="Calzone">
+                <p>Calzone</p>
+            </div>
+        </div>
+        <button onclick="goBack()">Back to Menus</button>
+    </div>
+
+    <div id="Contact" class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Have questions or feedback? We'd love to hear from you!</p>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We're here to help! Reach out to us via email, phone, or visit our office.</p>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> 123 Food Street, Hosur, India</li>
+                    <li><i class="fa fa-phone"></i> +123 456 7890</li>
+                    <li><i class="fa fa-envelope"></i> info@foodiestime.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function displayCuisine(cuisineId) {
+            document.querySelector('.ourMenus').style.display = 'none';
+            document.getElementById(cuisineId).style.display = 'block';
+        }
+
+        function goBack() {
+            document.querySelector('.ourMenus').style.display = 'block';
+            document.querySelectorAll('.cuisine-details').forEach(section => {
+                section.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+</html>
