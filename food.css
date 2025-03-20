@@ -5,14 +5,23 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
 }
 
+/* General Section Styling */
+section {
+    padding: 20px;
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+/* Header Section */
 .header {
     background-image: url("https://st4.depositphotos.com/3664757/27559/i/450/depositphotos_275596086-stock-photo-ingredients-making-traditional-italian-pesto.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
     padding: 20px;
@@ -23,6 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .logo_img {
@@ -35,16 +45,29 @@ body {
     margin-top: 10px;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 18px;
 }
 
-.icon_div i {
-    margin: 0 10px;
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
     font-size: 20px;
+    margin: 0 10px;
 }
 
 .header_content {
@@ -67,19 +90,15 @@ nav a {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
+    border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
 }
 
+/* About Section */
 .about {
     background-color: black;
     color: white;
-    padding: 20px;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -91,6 +110,8 @@ nav a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -99,12 +120,14 @@ nav a {
 .img_about {
     width: 45%;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .para_about {
     width: 45%;
     font-size: 18px;
     text-align: justify;
+    margin-bottom: 20px;
 }
 
 .about_top {
@@ -113,34 +136,34 @@ nav a {
     width: 100%;
     max-width: 1200px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .share, .glance {
     width: 45%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .glance_box {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
+/* Our Menus Section */
 .ourMenus {
     background-color: black;
     color: white;
-    padding: 20px;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
 .menuCard {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
     max-width: 1200px;
     margin-top: 20px;
@@ -150,7 +173,10 @@ nav a {
     width: 30%;
     border: 1px solid gold;
     padding: 10px;
+    border-radius: 10px;
+    text-align: center;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .menu_image {
@@ -158,16 +184,17 @@ nav a {
     border-radius: 10px;
 }
 
+/* Cuisine Details Section */
 .cuisine-details {
     display: none;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 40px 20px;
     text-align: center;
     height: 100vh;
-    width: 70%; 
-    margin: 0 auto; 
-    overflow-y: auto; 
+    width: 70%;
+    margin: 0 auto;
+    overflow-y: auto;
 }
 
 .cuisine-details h1 {
@@ -177,28 +204,28 @@ nav a {
 
 .food-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin: 20px auto;
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 
 .food-item {
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .food-item:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
 
 .food-item img {
     width: 100%;
-    height: 150px; 
-    object-fit: cover; 
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -221,13 +248,13 @@ button {
 }
 
 button:hover {
-    background-color: #ffcc00; 
+    background-color: #ffcc00;
 }
 
+/* Contact Section */
 .contact-section {
     background-color: black;
     color: white;
-    padding: 60px 20px;
     text-align: center;
 }
 
@@ -244,15 +271,15 @@ button:hover {
 .contact-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 40px;
-    height: 100vh;
 }
 
 .contact-form {
-    width: 50%;
+    width: 45%;
 }
 
 .contact-form input,
@@ -292,7 +319,7 @@ button:hover {
 }
 
 .contact-info {
-    width: 40%;
+    width: 45%;
     text-align: left;
 }
 
@@ -336,62 +363,29 @@ button:hover {
     color: gold;
 }
 
-@media (max-width: 768px) {
-    .contact-container {
+/* Responsive Design */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+    .header1 {
         flex-direction: column;
         align-items: center;
     }
 
-    .contact-form,
-    .contact-info {
-        width: 100%;
-    }
-
-    .contact-info {
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .cuisine-details {
-        width: 90%; 
-    }
-
-    .food-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .food-item img {
-        height: 120px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .cuisine-details h1 {
-        font-size: 30px;
-    }
-
-    .food-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-
-    .food-item p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header1 {
+    nav {
         flex-direction: column;
+        gap: 10px;
     }
 
     .menuCard {
         flex-direction: column;
+        align-items: center;
     }
 
     .inner_card {
-        width: 100%;
+        width: 80%;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .food-grid {
@@ -400,6 +394,70 @@ button:hover {
 
     .image_para {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .img_about, .para_about {
+        width: 90%;
+    }
+
+    .about_top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .share, .glance {
+        width: 90%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 90%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .header1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .menuCard {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .inner_card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .image_para {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .img_about, .para_about {
@@ -408,20 +466,98 @@ button:hover {
 
     .about_top {
         flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .share, .glance {
         width: 100%;
-        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    /* Fix for overlapping blocks */
+    .about, .ourMenus, .contact-section {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .cuisine-details {
+        margin-top: 20px; /* Add spacing above cuisine details */
+    }
+
+    section {
+        margin-bottom: 30px; /* Ensure spacing between sections */
     }
 }
 
+/* For small mobile devices */
 @media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
     .heading_main {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .heading_p {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .menu_button {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .inner_card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-info h2 {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .social-links a {
+        font-size: 18px;
+    }
+
+    /* Fix for overlapping blocks */
+    .about, .ourMenus, .contact-section {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .cuisine-details {
+        margin-top: 20px; /* Add spacing above cuisine details */
+    }
+
+    section {
+        margin-bottom: 20px; /* Ensure spacing between sections */
     }
 }
